@@ -1,0 +1,41 @@
+/* @font-face{
+    font-family: Impoted;
+    src: url('../../fonts/ObjectSans-Regular.ttf');
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+.home_section{
+    width: 100vw;
+    height: 100vh;
+    min-height: 1080px;
+    background-image: url('../../../public/home_section_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    margin-left: 100px;
+    margin-right: 85px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    color: white;
+}
+
+.home_header_nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home_main{
+    margin-top: 150px;
+}
