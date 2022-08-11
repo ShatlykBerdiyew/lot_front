@@ -131,31 +131,42 @@
 }
 
 .poligon {
-  width: 140px;
-  height: 140px;
+  width: 100%;
+  max-width: 140px;
+  height: 10rem;
+  max-height: 140px;
   background-image: url("../../assets/3_section/Polygon_bg.png");
-  /* background-size: contain; */
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   /* background: rgba(140, 140, 140, 0.1); */
-  background-position: 10px;
-  /* padding-top: 10px; */
+  /* background-position: 10px; */
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   flex-direction: column;
 }
 
+/* @media screen {
+  
+} */
+
 .poligon_white {
-  width: 140px;
-  height: 140px;
+  width: 100%;
+  max-width: 140px;
+  height: 10rem;
+  max-height: 140px;
   background-image: url("../../assets/3_section/Polygon_bg_white.png");
-  /* background-size: contain; */
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   /* background: rgba(140, 140, 140, 0.1); */
-  background-position: 10px;
+  /* background-position: 10px; */
   /* padding-top: 10px; */
   flex-direction: column;
 }
@@ -238,4 +249,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.poligon__img {
+  width: 30%;
+  max-width: 64px;
 }

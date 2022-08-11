@@ -456,8 +456,9 @@ const Renegades = () => {
                 <img
                   src={renegades.fraction.materials[0].icon}
                   alt="fire"
-                  width={64}
-                  height={64}
+                  className="poligon__img"
+                  // width={64}
+                  // height={64}
                 />
                 <div className="polig_subtitle">
                   {renegades.fraction.materials[0].type}
@@ -470,8 +471,9 @@ const Renegades = () => {
                 <img
                   src={renegades.fraction.materials[1].icon}
                   alt="fire"
-                  width={64}
-                  height={64}
+                  className="poligon__img"
+                  // width={64}
+                  // height={64}
                 />
                 <div className="polig_subtitle">
                   {renegades.fraction.materials[1].type}
@@ -484,8 +486,9 @@ const Renegades = () => {
                 <img
                   src={renegades.fraction.materials[2].icon}
                   alt="fire"
-                  width={64}
-                  height={64}
+                  className="poligon__img"
+                  // width={64}
+                  // height={64}
                 />
                 <div className="polig_subtitle">
                   {renegades.fraction.materials[2].type}
