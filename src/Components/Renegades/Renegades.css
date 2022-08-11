@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.renegades {
+  width: 100vw;
+  max-width: 1920px;
+
+  height: 2758px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-left: 1rem;
+}
+
+.container {
+  /* width: 2370px; */
+  width: 100%;
+  height: 100%;
+  /* height: 2370px; */
+  /* background-image: url("../../assets/3_section/3_section_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-color: antiquewhite; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+}
+
+.wrapper {
+  width: 100vw;
+  max-width: 1920px;
+  height: 100%;
+  /* margin-left: 310px;
+  margin-right: 310px; */
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  width: 25%;
+  height: 500px;
+  /* background-color: #fff; */
+}
+
+.center {
+  width: 50%;
+  /* height: 500px; */
+  /* background-color: aqua; */
+  /* clip-path: polygon(
+    99.86% 50.08%,
+    75% 93.3%,
+    25% 93.3%,
+    0% 50%,
+    25% 6.7%,
+    75% 6.7%
+  ); */
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.rigth {
+  width: 25%;
+  height: 500px;
+  /* background-color: blue; */
+}
+
+.franc_title {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.reneg_title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.fraction_icons {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.fraction_desc {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+
+  text-align: center;
+
+  color: #c8c8c8;
+
+  margin-top: 32px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.fraction_desc_rigth {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+
+  text-align: center;
+
+  color: #c8c8c8;
+
+  margin-top: 32px;
+  /* padding-left: 30px; */
+  padding-right: 50px;
+}
+
+.fraction_characteristic {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+.poligon {
+  width: 140px;
+  height: 140px;
+  background-image: url("../../assets/3_section/Polygon_bg.png");
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rgba(140, 140, 140, 0.1); */
+  background-position: 10px;
+  /* padding-top: 10px; */
+  flex-direction: column;
+}
+
+.poligon_white {
+  width: 140px;
+  height: 140px;
+  background-image: url("../../assets/3_section/Polygon_bg_white.png");
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rgba(140, 140, 140, 0.1); */
+  background-position: 10px;
+  /* padding-top: 10px; */
+  flex-direction: column;
+}
+
+/* .poligon > img { */
+/* padding-right: 12px;
+  padding-top: 10px; */
+/* } */
+
+.polig_subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  /* identical to box height, or 10px */
+
+  text-align: center;
+
+  color: #c8c8c8;
+  margin-top: 8px;
+}
+
+.polig_title {
+  margin-top: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+.religion {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bg__1 {
+  background-image: url("../../assets/3_section/bg__1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bg__2 {
+  background-image: url("../../assets/3_section/bg__2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bg__3 {
+  background-image: url("../../assets/3_section/bg__3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bg__4 {
+  background-image: url("../../assets/3_section/bg__4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bg__5 {
+  background-image: url("../../assets/3_section/bg__5.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bg__6 {
+  background-image: url("../../assets/3_section/bg__6.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
