@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 .renegades {
-  width: 100vw;
-  max-width: 1920px;
+  width: 100%;
+  /* max-width: 1920px; */
 
   height: 2758px;
   background-color: black;
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
 }
 
 .container {
@@ -28,25 +28,25 @@
 }
 
 .wrapper {
-  width: 100vw;
-  max-width: 1920px;
+  width: 100%;
+  /* max-width: 1920px; */
   height: 100%;
   /* margin-left: 310px;
   margin-right: 310px; */
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .left {
   width: 25%;
-  height: 500px;
+  /* height: 500px; */
   /* background-color: #fff; */
 }
 
 .center {
-  width: 50%;
+  width: 40%;
   /* height: 500px; */
   /* background-color: aqua; */
   /* clip-path: polygon(
@@ -62,7 +62,7 @@
 
 .rigth {
   width: 25%;
-  height: 500px;
+  /* height: 500px; */
   /* background-color: blue; */
 }
 
@@ -201,41 +201,41 @@
 .bg__1 {
   background-image: url("../../assets/3_section/bg__1.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 .bg__2 {
   background-image: url("../../assets/3_section/bg__2.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 .bg__3 {
   background-image: url("../../assets/3_section/bg__3.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 .bg__4 {
   background-image: url("../../assets/3_section/bg__4.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 .bg__5 {
   background-image: url("../../assets/3_section/bg__5.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 .bg__6 {
   background-image: url("../../assets/3_section/bg__6.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }

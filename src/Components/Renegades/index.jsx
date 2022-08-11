@@ -270,13 +270,10 @@ const Renegades = () => {
   const playerRef = useRef(null);
   const { x } = useMouse();
 
-  const [bg, setBg] = useState(data[0].fraction.bg);
   const [renegades, setRenegades] = useState(data[0]);
 
   const [mouseSection, setMouseSection] = useState(0.5);
   const [oldPosition, setOldPosition] = useState(0.5);
-  // const [i, setI] = useState(0.5);
-  // let i = 0.5;
   useEffect(() => {
     if (x < 600) {
       if (mouseSection !== 1) {
@@ -330,6 +327,7 @@ const Renegades = () => {
 
     if (oldPosition === 0.5 && mouseSection === 1) {
       clearInterval(frame);
+      frame = null;
       let i = 0.5;
       frame = setInterval(function () {
         playerRef.current.seekTo(i, "fraction");
@@ -337,15 +335,16 @@ const Renegades = () => {
           clearInterval(frame);
         }
         if (i < 1) {
-          i = i + 0.016;
+          i = i + 0.06;
         } else {
           clearInterval(frame);
         }
-      }, 40);
+      }, 70);
     }
 
     if (oldPosition === 1 && mouseSection === 0.5) {
       clearInterval(frame);
+      frame = null;
       let i = 1;
       frame = setInterval(function () {
         playerRef.current.seekTo(i, "fraction");
@@ -353,15 +352,16 @@ const Renegades = () => {
           clearInterval(frame);
         }
         if (i > 0.5) {
-          i = i - 0.016;
+          i = i - 0.06;
         } else {
           clearInterval(frame);
         }
-      }, 40);
+      }, 70);
     }
 
     if (oldPosition === 0.5 && mouseSection === 0) {
       clearInterval(frame);
+      frame = null;
       let i = 0.5;
       frame = setInterval(function () {
         playerRef.current.seekTo(i, "fraction");
@@ -369,15 +369,16 @@ const Renegades = () => {
           clearInterval(frame);
         }
         if (i > 0) {
-          i = i - 0.016;
+          i = i - 0.06;
         } else {
           clearInterval(frame);
         }
-      }, 40);
+      }, 70);
     }
 
     if (oldPosition === 0 && mouseSection === 0.5) {
       clearInterval(frame);
+      frame = null;
       let i = 0;
       frame = setInterval(function () {
         playerRef.current.seekTo(i, "fraction");
@@ -385,28 +386,13 @@ const Renegades = () => {
           clearInterval(frame);
         }
         if (i < 0.5) {
-          i = i + 0.016;
+          i = i + 0.06;
         } else {
           clearInterval(frame);
         }
-      }, 40);
+      }, 70);
     }
   }, [mouseSection]);
-
-  const handleButtun = () => {
-    let i = 1;
-    let frame = setInterval(function () {
-      playerRef.current.seekTo(i, "fraction");
-      // playerRef.current.seekTo(i, "seconds");
-      if (i > 0) {
-        i = i - 0.002;
-      } else {
-        // i = 1;
-        clearInterval(frame);
-      }
-      console.log("SetInterval");
-    }, 5);
-  };
 
   return (
     <div className={`renegades`}>
@@ -415,19 +401,20 @@ const Renegades = () => {
           <div className="left">
             <div className="franc_title">
               <img src={Left_arr} alt="arr" />
-              <img src={fraction} alt="arr" width={67} height={17} />
+              <img src={fraction} alt="arr" height="17px" />
               <img src={Rigth_arr} alt="arr" />
             </div>
 
             <div className="reneg_title">
-              <img src={renegades.fraction.title} alt="" width={202} />
+              <img src={renegades.fraction.title} alt="" height="52px" />
             </div>
 
             <div className="fraction_icons">
               <img
                 src={icon1}
                 alt="icon"
-                width={54}
+                // width="54px"
+                height="54px"
                 onClick={() => setRenegades(data[0])}
               />
               <img
@@ -525,12 +512,12 @@ const Renegades = () => {
           <div className="rigth">
             <div className="franc_title">
               <img src={Left_arr} alt="arr" />
-              <img src={legend} alt="arr" width={55} height={17} />
+              <img src={legend} alt="arr" height="17px" />
               <img src={Rigth_arr} alt="arr" />
             </div>
 
             <div className="reneg_title">
-              <img src={renegades.legend.title} alt="" width={49} />
+              <img src={renegades.legend.title} alt="" height="52px" />
             </div>
             <div className="fraction_desc_rigth">{renegades.legend.desc}</div>
             <div className="fraction_characteristic">
@@ -544,7 +531,7 @@ const Renegades = () => {
                 <img src={question} alt="fire" width={22} />
               </div>
             </div>
-            <button onClick={handleButtun}>Orta gech {x}</button>
+            {/* <button onClick={handleButtun}>Orta gech {x}</button> */}
             <h2 style={{ color: "white" }}>oldSection {oldPosition}</h2>
             <h2 style={{ color: "white" }}>mousePosition {mouseSection}</h2>
             {/* <h2 style={{ color: "white" }}>i:= {i}</h2> */}
